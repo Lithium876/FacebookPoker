@@ -6,5 +6,6 @@ This SIMPLE script checks if you've been poked every milli-second and immediatel
 python poke.py [email] [password]
 
 #Requirements 
-python 3.x\n
+python 3.x
+
 selenium - Installed in the C:\Program Files (x86)\ or C:\Program Files\ folder. Just make sure to reference it in the code wherever you put it. 
