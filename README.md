@@ -7,4 +7,5 @@ python poke.py [email] [password]
 
 #Requirements 
 python 3.x
+
 selenium - Installed in the C:\Program Files (x86)\ folder
