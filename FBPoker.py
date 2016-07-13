@@ -1,3 +1,7 @@
+#Facebook Poker 2016
+#Lomar Lilly
+#USE AT YOUR OWN RISK
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time,sys
