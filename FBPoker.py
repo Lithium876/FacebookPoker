@@ -21,7 +21,6 @@ def poke():
 				break
 		poke()
 	except:
-		time.sleep(1)
 		poke()
 
 def login(user,pwd):
