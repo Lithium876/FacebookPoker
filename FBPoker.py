@@ -10,18 +10,18 @@ browser = webdriver.PhantomJS("C:\Program Files (x86)\phantomjs-2.1.1-windows\ph
 browser.set_window_size(1024, 768)
 
 def poke():
-	browser.get("https://www.facebook.com/pokes")
-	try:
-		a = browser.find_elements_by_xpath("""//*[@class="_42ft _4jy0 _4jy3 _4jy1 selected _51sy"]""")
-		for i in range(0,len(a)):
-			pokeback = a[i].text
-			if pokeback == "Poke Back":
-				a[i].click()
-			else:
-				break
-		poke()
-	except:
-		poke()
+	while True:
+		try:
+			a = browser.find_elements_by_xpath("""//*[@class="_42ft _4jy0 _4jy3 _4jy1 selected _51sy"]""")
+			for i in range(0,len(a)):
+				pokeback = a[i].text
+				if pokeback == "Poke Back":
+					a[i].click()
+					print("Poke Sent")
+				else:
+					break
+		except:
+			pass
 
 def login(user,pwd):
 	browser.get("https://www.facebook.com/")
